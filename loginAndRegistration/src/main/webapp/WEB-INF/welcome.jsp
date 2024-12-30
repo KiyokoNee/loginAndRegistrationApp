@@ -9,11 +9,13 @@
 <%@ page isErrorPage="true" %>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Dashboard</title>
+	</head>
+	<body>
+		<a href="/logout">Logout</a>
+		<h1>Welcome, <c:out value="${username}"></c:out>!</h1>
+		<p>This is your dashboard. Nothing to see here yet.</p>
+	</body>
 </html>

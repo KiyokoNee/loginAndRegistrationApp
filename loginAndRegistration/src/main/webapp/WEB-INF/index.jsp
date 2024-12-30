@@ -11,18 +11,18 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Login & Registration</title>
+		<title>Login and Registration</title>
 	</head>
 	<body>
 			<h1>Welcome!</h1>
 			<p>Join our growing community.</p>
 			<div id="forms">
-				<form:form modelAttribute="newUser">
+				<form:form modelAttribute="newUser" method="post" action="/register">
 					<h2>Register</h2>	
-					<span class="errors"><form:errors path="userName" /></span>
+					<span class="errors"><form:errors path="username" /></span>
 					<div>
-						<form:label path="userName">User Name: </form:label>
-						<form:input path="userName" />
+						<form:label path="username">User Name: </form:label>
+						<form:input path="username" />
 					</div>	
 					<span class="errors"><form:errors path="email" /></span>
 					<div>
@@ -41,7 +41,8 @@
 					</div>
 					<button class="formButton" type="submit">Submit</button>
 				</form:form>
-				<form:form modelAttribute="newLogin">
+				
+				<form:form modelAttribute="newLogin" method="post" action="/login">
 					<h2>Login</h2>
 					<span class="errors"><form:errors path="email" /></span>
 					<div>

@@ -26,7 +26,7 @@ public class User {
 	
 	@NotBlank(message="Username is required!")
 	@Size(min=3, max=30, message="Username must be between 3 and 30 characters")
-	private String userName;
+	private String username;
 	
 	@NotBlank(message="Email is required!")
 	@Email(message="Please enter a valid email!")
@@ -68,12 +68,12 @@ public class User {
 		this.id = id;
 	}
 
-	public String getUserName() {
-		return userName;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUsername(String userName) {
+		this.username = userName;
 	}
 
 	public String getEmail() {
