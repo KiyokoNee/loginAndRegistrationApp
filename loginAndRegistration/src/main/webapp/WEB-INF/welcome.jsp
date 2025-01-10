@@ -12,8 +12,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Dashboard</title>
+		<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/style.css" />
+    	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 	</head>
-	<body>
+	<body class="w-75 mx-auto my-5">
 		<a href="/logout">Logout</a>
 		<h1>Welcome, <c:out value="${username}"></c:out>!</h1>
 		<p>This is your dashboard. Nothing to see here yet.</p>

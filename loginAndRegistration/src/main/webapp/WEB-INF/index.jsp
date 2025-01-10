@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="/css/style.css" />
     	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 	</head>
-	<body class="w-75 mx-auto my5">
+	<body class="w-75 mx-auto my-5">
 			<div class="text-center">
 				<h1>Welcome!</h1>
 				<p>Join our growing community.</p>
